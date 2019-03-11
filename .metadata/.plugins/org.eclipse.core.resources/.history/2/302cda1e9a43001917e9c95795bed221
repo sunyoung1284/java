@@ -1,0 +1,8 @@
+class 'Hellojava2' {
+ public static void main(String []args){
+ System.out.println("Hello Java"); 
+ int a=10;
+ int valName2=3;
+ System.out,print
+ }
+}
