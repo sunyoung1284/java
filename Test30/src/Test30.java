@@ -1,4 +1,4 @@
-import java.util.Scanner;
+  import java.util.Scanner;
 
 public class Test30 {
 	public double weight;
