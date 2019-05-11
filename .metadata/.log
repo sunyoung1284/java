@@ -4214,3 +4214,1711 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-22 08:54:52.477 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-22 08:55:05.086
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SMART-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-23 16:41:00.678 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 2 2019-04-23 16:41:12.278
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core.manipulation".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.classfmt.ClassFileReader.getMemberTypes(ClassFileReader.java:740)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.cachePartsFrom(BinaryTypeBinding.java:436)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:1040)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:1021)
+	at org.eclipse.jdt.internal.compiler.Compiler.accept(Compiler.java:308)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:249)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:114)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:231)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:241)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getPackage(Scope.java:2980)
+	at org.eclipse.jdt.internal.compiler.ast.QualifiedTypeReference.getTypeBinding(QualifiedTypeReference.java:110)
+	at org.eclipse.jdt.internal.compiler.ast.TypeReference.internalResolveType(TypeReference.java:514)
+	at org.eclipse.jdt.internal.compiler.ast.TypeReference.resolveType(TypeReference.java:615)
+	at org.eclipse.jdt.internal.compiler.ast.TypeReference.resolveType(TypeReference.java:611)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:274)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:641)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:551)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1229)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1354)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:652)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:1249)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:714)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1212)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:827)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:271)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:263)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:196)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:175)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2019-04-23 16:41:12.281
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.classfmt.ClassFileReader.getMemberTypes(ClassFileReader.java:740)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.cachePartsFrom(BinaryTypeBinding.java:436)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:1040)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:1021)
+	at org.eclipse.jdt.internal.compiler.Compiler.accept(Compiler.java:308)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:249)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:114)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:231)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:241)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getPackage(Scope.java:2980)
+	at org.eclipse.jdt.internal.compiler.ast.QualifiedTypeReference.getTypeBinding(QualifiedTypeReference.java:110)
+	at org.eclipse.jdt.internal.compiler.ast.TypeReference.internalResolveType(TypeReference.java:514)
+	at org.eclipse.jdt.internal.compiler.ast.TypeReference.resolveType(TypeReference.java:615)
+	at org.eclipse.jdt.internal.compiler.ast.TypeReference.resolveType(TypeReference.java:611)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:274)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:641)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:551)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1229)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1354)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:652)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:1249)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:714)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1212)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:827)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:271)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:263)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:196)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:175)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-23 16:41:13.036
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SMART-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-24 08:56:42.977 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-24 08:56:56.270
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SMART-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-25 17:21:05.288 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-25 17:21:16.960
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SMART-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.078
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.079
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.081
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.081
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.083
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.083
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.085
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.085
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.087
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.087
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.089
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.089
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.091
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.091
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.093
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.093
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.095
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.095
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.097
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.097
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.099
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.099
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.101
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.101
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.103
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.103
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.104
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.105
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.106
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.107
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.108
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.108
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.110
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.110
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.112
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.112
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.113
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.114
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.115
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.117
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.118
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.118
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.120
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.120
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.122
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.122
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.124
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.124
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.125
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.126
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.127
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.128
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.129
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.129
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.131
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.131
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.133
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.133
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.134
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.134
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.136
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.136
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.137
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.138
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.139
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.139
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.141
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.141
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.142
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.142
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2019-04-25 21:26:48.144
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:323)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.getTypeName(JavaBreakpoint.java:926)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.lambda$0(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1400)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsBreakpoint(JDIDebugTarget.java:1356)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointRemoved(JDIDebugTarget.java:1641)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.run(BreakpointManager.java:1067)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointNotifier.notify(BreakpointManager.java:1091)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:999)
+	at org.eclipse.debug.internal.core.BreakpointManager.removeBreakpoints(BreakpointManager.java:532)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:788)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:721)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:365)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:583)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:548)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:424)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:431)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:127)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:832)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2019-04-25 21:26:48.144
+!MESSAGE Breakpoint does not have an associated marker.
+!SESSION 2019-04-26 08:30:42.904 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-26 08:30:55.084
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SMART-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-29 08:56:11.774 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-29 08:56:23.242
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SMART-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-05-03 08:59:11.737 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-03 08:59:25.143
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SMART-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-05-03 15:50:39.425 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-03 15:50:48.888
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SMART-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-05-07 20:07:53.072 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-07 20:08:05.978
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SMART-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-05-08 08:53:43.218 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-08 08:54:51.114
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SMART-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-05-08 16:11:04.229
+!MESSAGE Unknown Host: http://download.eclipse.org/oomph/updates/milestone/latest/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-05-08 16:11:04.368
+!MESSAGE Unknown Host: http://download.eclipse.org/eclipse/updates/4.10/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-05-08 16:11:04.420
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/2018-12/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2019-05-10 08:57:50.565 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-10 08:58:03.242
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SMART-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-05-11 17:10:42.573 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-11 17:10:54.956
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SMART-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

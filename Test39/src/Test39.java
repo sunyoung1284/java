@@ -1,4 +1,7 @@
 import java.util.Scanner;
+//문자로받고 숫자로 전환
+//트라이 캐치
+//나누기 하고 소숫점 올림해서 정수로 리턴해봐
 
 public class Test39 {
 
@@ -33,7 +36,7 @@ public class Test39 {
 		double divisionResult = 0;
 		divisionResult = (double) this.number1 / this.number2;
 
-		divisionResult = (double) Math.round(divisionResult * 100) / 100;
+		divisionResult = (double) Math.round(divisionResult * 100) / 100; //Math.round는 실수의 소수점 첫번째 자리를 반올림하여 정수로 리턴
 
 		System.out.println("" + this.number1 + " 나누기 " + this.number2 + " = " + divisionResult + " 입니다");
 

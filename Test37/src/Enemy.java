@@ -1,5 +1,8 @@
 import java.util.Random;
-
+//이름 hp 
+//상태
+//파워
+//어택파워
 public class Enemy {
 	String name = "";
 	int hp = 0;

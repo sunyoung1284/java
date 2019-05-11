@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class Test38 {
 	int number1=0;
 	int number2=0;

@@ -15,7 +15,7 @@ public class Student implements Comparable<Student> {
 		return tmp;
 	}
 	@Override
-	public int compareTo(Student o) {
+	public int compareTo(Student o) {//정렬
 		if (this.total < o.total) {
 			return -1;
 		} else if (this.total > o.total) {
