@@ -32,11 +32,6 @@ public class Person {
 			this.sayNumber=this.players[prevPosition].sayNumber+1;
 		}
 //		this.sayNumber=this.players[(this.position+(this.players.length-1))%this.players.length].sayNumber+1;
-		System.out.println(this.name+"say"+this.sayNumber);
-		int nextPosition=(this.position+1)%this.players.length; //다음사람
-		if(this.sayNumber<this.endNumber) { // 종료조건
-			this.players[nextPosition].sayNumber();
-		}
 		
 		
 		String stringSayNumber = Integer.toString(sayNumber);
@@ -58,6 +53,12 @@ public class Person {
 			clap = clap + clap;
 			System.out.println(this.name + " say " + clap);
 		}
+
+		int nextPosition = (this.position + 1) % this.players.length;
+		if(this.sayNumber < this.endNumber) {
+			this.players[nextPosition].sayNumber();
+		}
+		
 	}
 	public void gameStart() {
 		this.sayNumber=-1;//시작자 구분 지어 주기
