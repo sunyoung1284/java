@@ -54,35 +54,46 @@ public class DataReader {
 		if (this.connection == null) {
 			throw new Exception("DB is not open");
 		}
-		String query = "CREATE TABLE " + this.dbTableName + "(idx INT PRIMARY KEY,name TEXT, score REAL);";
+		String query = "CREATE TABLE " + this.dbTableName + "(idx INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, middle_score INTEGER, final_score INTEGER);";
 		Statement statement = this.connection.createStatement();
 		int result = statement.executeUpdate(query);
 		statement.close();
 		return result;
 	}
 
-	public int insertData() throws SQLException {
-		String query = "INSERT INTO " + this.dbTableName + "(name, score) VALUES('abc',11);";
+	public int insertData(String name, int middleScore, int finalScore) throws SQLException {
+		String query = "INSERT INTO " + this.dbTableName + "(name, middle_score, final_score) VALUES('" + name + "'," + middleScore + "," + finalScore + ");";
 		Statement statement = this.connection.createStatement();
 		int result = statement.executeUpdate(query);
 		statement.close();
 		return result;
 	}
 
-	public boolean selectData() throws SQLException {
-		boolean result = false;
-		String query = "SELECT * FROM " + this.dbTableName + " WHERE ?;";
+	public String selectData() throws SQLException {
+		String query = "SELECT * FROM " + this.dbTableName + " WHERE ?;"; //select 조회해오기
 		PreparedStatement preparedStatement = this.connection.prepareStatement(query);
-		preparedStatement.setInt(1, 1);
-		ResultSet resultSet = preparedStatement.executeQuery();
-		if (resultSet.next()) {
-			System.out.println(resultSet.getString("name"));
-			result = true;
+		preparedStatement.setInt(1, 1); //물음표에 해당하는 걸 여기에 있는걸로 바꿔줌
+		ResultSet resultSet = preparedStatement.executeQuery(); //resultSet에 들어가있지요
+		String listString = "";
+		while (resultSet.next()) { //한 행씩 조회
+			listString = listString + "<tr>";
+			listString = listString + "<td>";
+			listString = listString + resultSet.getString("idx");
+			listString = listString + "</td>";
+			listString = listString + "<td>";
+			listString = listString + resultSet.getString("name");
+			listString = listString + "</td>";
+			listString = listString + "<td>";
+			listString = listString + resultSet.getString("middle_score");
+			listString = listString + "</td>";
+			listString = listString + "<td>";
+			listString = listString + resultSet.getString("final_score");
+			listString = listString + "</td>";
+			listString = listString + "</tr>"; //하나의 문자열로 만들어줘서 한행
 		}
 		resultSet.close();
 		preparedStatement.close();
-		return result;
+		return listString;
 	}
-
 
 }
