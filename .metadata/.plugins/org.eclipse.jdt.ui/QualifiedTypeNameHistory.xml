@@ -38,4 +38,6 @@
     <fullyQualifiedTypeName name="com.sunyoung.spring4.Student"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Field"/>
     <fullyQualifiedTypeName name="com.sunyoung.spring4.People"/>
+    <fullyQualifiedTypeName name="com.sunyoung.spring5.People"/>
+    <fullyQualifiedTypeName name="java.security.MessageDigest"/>
 </qualifiedTypeNameHistroy>
