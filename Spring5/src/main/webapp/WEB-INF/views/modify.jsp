@@ -16,7 +16,7 @@
 		<input type="hidden" name="idx" value="${idx}"/>
 		<label>ID</label> <input type="text"  name="id" value="${id}" />
 		<label>이름</label> <input type="text" placeholder="이름입력" name="name" value="${name}"  />
-		<label>PASSWORD</label> <input type="text" name="password" value="${password}" />
+		<label>PASSWORD</label> <input type="password" name="password" value="${password}" />
 		<label>주소</label> <input type="text" placeholder="주소" name="address" value="${address}" />
 		<label>생일</label> <input type="text" placeholder="생일" name="birthday" value="${birthday}" />
 		<label>좋아하는 색상</label> <input type="text" placeholder="좋아하는 색상"

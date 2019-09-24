@@ -284,4 +284,27 @@ public class DBCommon<T> {
 		}
 		return details;
 	}
+	public boolean signIn(String id, String password) {
+		boolean is_sign_in = false;
+		try {
+			if (this.connection == null) {
+				this.open();
+			}
+			String query = "SELECT * FROM " + this.tableName + " WHERE id='" + id + "' AND password='" + password + "';";
+			PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if (resultSet.next()) {
+				is_sign_in = true;
+			}
+			preparedStatement.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			this.close();
+		}
+		return is_sign_in;
+	}
+	
 }

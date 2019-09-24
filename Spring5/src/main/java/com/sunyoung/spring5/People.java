@@ -19,6 +19,13 @@ public class People {
 		this.id=id;
 		this.password=password;
 	}
+	
+	People(String name, String favoriteColor,String address, String birthday) {
+		this.name = name;
+		this.favoriteColor = favoriteColor;
+		this.address=address;
+		this.birthday=birthday;
+	}
 	public String toTableTagString() {
 		String tagString = "";
 		tagString = tagString + "<tr>";
