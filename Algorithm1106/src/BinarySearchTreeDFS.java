@@ -3,14 +3,12 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-public class BinarySearchTree {
+public class BinarySearchTreeDFS {
 
 	private Node root;
 	public ArrayList nodes = new ArrayList();
 	public int[][] adjMatrix;// Edges will be represented as adjacency Matrix
 	int size;
-	int addNodeCount=0;
-	
 
 	public void setRootNode(Node n) {
 		this.root = n;
@@ -20,10 +18,6 @@ public class BinarySearchTree {
 		return this.root;
 	}
 
-//	public void addNode(Node n)
-//	{
-//		nodes.add(n);
-//	}
 
 	static class Node {
 		int key;
@@ -59,7 +53,6 @@ public class BinarySearchTree {
 			root = newNode;
 			nodes.add(newNode);
 			setRootNode(newNode);// 트리가 비어있으면 root 에 삽입
-			addNodeCount++;
 
 		} else {
 			Node focusNode = root; // 탐색용 노드
@@ -77,7 +70,6 @@ public class BinarySearchTree {
 //						System.out.println("나는부모" + parent+ "나는 꼬붕" + newNode);
 						nodes.add(newNode);
 						connectNode(parent, newNode);
-						addNodeCount++;
 						// 왼쪽 노드에 삽입
 						return;
 					}
@@ -89,7 +81,6 @@ public class BinarySearchTree {
 //						System.out.println("나는부모" + parent.key + "나는 꼬붕" + newNode.key);
 						nodes.add(newNode);
 						connectNode(parent, newNode);
-						addNodeCount++;
 						return;
 					}
 
@@ -148,18 +139,15 @@ public class BinarySearchTree {
 		// 지우려는 노드의 자식 노드가 없는 경우
 		if (focusNode.leftChild == null && focusNode.rightChild == null) {
 			if (focusNode == root) {
-				root = null;
-//				nodes.remove(root);////이거지워야할지도
+				root = null;	
 				
 			}
 			else if (isLeftChild) {
 				parent.leftChild = null;
-//				nodes.remove(parent.leftChild);////이거지워야할지도
 			}
 				
 			else {
 				parent.rightChild = null;
-//				nodes.remove(parent.rightChild);////이거지워야할지도
 				
 			}
 			replacementNode= null;
@@ -290,7 +278,7 @@ public class BinarySearchTree {
 		
 		
 	}
-
+    //오른쪽 노드들 중 가장 작은고 구하는거
 	private Node getRightMinNode(Node rightChildRoot) {
 		Node parent = rightChildRoot;
 		Node focusNode = rightChildRoot;
@@ -351,8 +339,8 @@ public class BinarySearchTree {
 	}
 
 	public void BFS() {
-		Queue<Node> q = new LinkedList<>();
-		q.offer(root);
+		Queue<Node> q = new LinkedList<>();  //큐는 처음들어온게 먼저 나가지
+		q.offer(root); 
 		while (!q.isEmpty()) {
 			Node n = q.poll();
 			System.out.print(n.key + " ");
@@ -363,13 +351,13 @@ public class BinarySearchTree {
 		}
 	}
 
-
+	// 방문하지 않은 자식 노드
 	private Node getUnvisitedChildNode(Node n) {
 
 		int index = nodes.indexOf(n);
 		int j = 0;
 		while (j < size) {
-			if (adjMatrix[index][j] == 1 && ((Node) nodes.get(j)).visited == false) {
+			if (adjMatrix[index][j] == 1 && ((Node) nodes.get(j)).visited == false) { //자식 노드 이면서 안들린곳
 				return (Node) nodes.get(j);
 			}
 			j++;
@@ -379,7 +367,7 @@ public class BinarySearchTree {
 
 	public void DFS() {
 		// DFS uses Stack data structure
-		Stack s = new Stack();
+		Stack s = new Stack();  //스택은 마지막 들어온거부터 나간당
 		s.push(this.root);
 		root.visited = true;
 		printNode(root);
@@ -395,7 +383,7 @@ public class BinarySearchTree {
 			}
 		}
 		// Clear visited property of nodes
-		clearNodes();
+		clearNodes(); //이거는 방문한 거 노드 지우는고야
 	}
 
 	// Utility methods for clearing visited property of node
@@ -415,8 +403,8 @@ public class BinarySearchTree {
 
 	public static void main(String[] args) {
 
-		BinarySearchTree bTree = new BinarySearchTree();
-		BinarySearchTree bTree2 = new BinarySearchTree();
+		BinarySearchTreeDFS bTree = new BinarySearchTreeDFS();
+		BinarySearchTreeDFS bTree2 = new BinarySearchTreeDFS();
 
 	
 		// Adding nodes to the BinarySearchTree
@@ -448,19 +436,7 @@ public class BinarySearchTree {
 		bTree2.addNode(70);		
 		bTree2.addNode(85);
 		
-//		bTree2.addNode(25);
-//		bTree2.addNode(20);
-//		bTree2.addNode(10);
-//		bTree2.addNode(5);
-//		bTree2.addNode(12);
-//		bTree2.addNode(22);	
-//		bTree2.addNode(36);
-//		bTree2.addNode(30);
-//		bTree2.addNode(28);
-//		bTree2.addNode(40);		
-//		bTree2.addNode(38);
-//		bTree2.addNode(48);
-//	
+
 	
 
 

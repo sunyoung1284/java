@@ -152,11 +152,11 @@ class Board {
  
     public void callMinimax(int depth, int turn){
         rootsChildrenScores = new ArrayList<PointsAndScores>();
-        minimax(depth, turn);
+        minimax(depth, turn,Integer.MIN_VALUE,Integer.MAX_VALUE);
     }
     
-    public int minimax(int depth, int turn) {
-
+    public int minimax(int depth, int turn ,int alpha ,int beta) {
+    
         if (hasXWon()) {
         	return +1;
         }
@@ -169,29 +169,44 @@ class Board {
         	return 0; 
         }
 
-        List<Integer> scores = new ArrayList<Integer>(); 
+//        List<Integer> scores = new ArrayList<Integer>(); 
+        
 
         for (int i = 0; i < pointsAvailable.size(); ++i) {
         	
-            Point point = pointsAvailable.get(i);  
+            Point point = pointsAvailable.get(i); //인덱스로 가져오지롱 
 
-            if (turn == 1) { //X's turn select the highest from below minimax() call
+
+            if (turn == 1) { //X's turn select the highest from below minimax() call 가장 높은거 호출
                 placeAMove(point, 1); //선택한 포인트에 1 들어간당
-                int currentScore = minimax(depth + 1, 2);
-                System.out.println("현재스코어"+currentScore);
-                scores.add(currentScore);
-                System.out.println("스코어"+scores);
+                int currentScore = minimax(depth + 1, 2,alpha,beta);
+                   
+                if(currentScore > alpha) {
+                	alpha = currentScore;
+                }
 
                 if (depth == 0) 
                     rootsChildrenScores.add(new PointsAndScores(currentScore, point));
                 
             } else if (turn == 2) {//O's turn select the lowest from below minimax() call
                 placeAMove(point, 2); 
-                scores.add(minimax(depth + 1, 1));
+                int currentScore = (minimax(depth + 1, 1,alpha,beta));
+                if(beta>currentScore) {
+                	beta =currentScore;	
+                }              
             }
             board[point.x][point.y] = 0; //Reset this point
+            if (alpha >= beta) {
+            	if (turn == 1) {
+            		System.out.println("beta cut off " + point.x + " " + point.y);
+            	}else {
+            		System.out.println("alpha cut off"+ point.x + " " + point.y);
+            	}
+            	break; // cut off
+            }
         }
-        return turn == 1 ? returnMax(scores) : returnMin(scores);
+
+        return turn == 1 ? alpha : beta;
     }
 }
 
@@ -221,6 +236,7 @@ public class TicTacToe {
                 break;
             } 
             b.callMinimax(0, 1);
+
             for (PointsAndScores pas : b.rootsChildrenScores) {
                 System.out.println("Point: " + pas.point + " Score: " + pas.score);
             }
